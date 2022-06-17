@@ -1,0 +1,67 @@
+.Portal__wrapper {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  .Portal__back {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000000;
+    z-index: 1;
+    opacity: 0.5;
+  }
+  .Portal__window {
+    display: block;
+    position: relative;
+    z-index: 2;
+    width: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 15px;
+    padding: 0 0 20px 0;
+    @media screen and (max-width: 430px) {
+      width: 95%;
+    }
+    h2 {
+      display: block;
+      text-align: center;
+      padding: 20px 0;
+    }
+    div {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      img {
+        width: 30px;
+        height: 30px;
+        margin: 0 10px 0 20px;
+      }
+      .txt {
+        width: 65%;
+        padding: 0 0 0 10px;
+      }
+      p {
+        color: #373737;
+      }
+    }
+    button {
+      width: 100px;
+      height: 25px;
+      margin: 10px auto;
+      display: block;
+      border-radius: 10px;
+      border: none;
+      background-color: #2196f3;
+      color: #fff;
+      cursor: pointer;
+    }
+  }
+}
